@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-11-2017 a las 21:13:20
+-- Tiempo de generación: 28-11-2017 a las 23:35:23
 -- Versión del servidor: 5.7.17-log
 -- Versión de PHP: 5.6.30
 
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `afiliado` (
-  `cod_afiliado` int(11) NOT NULL,
+  `cod_afiliado` varchar(50) NOT NULL,
   `nombre_afiliado` varchar(50) DEFAULT NULL,
   `apellido_afiliado` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -37,8 +37,9 @@ CREATE TABLE `afiliado` (
 --
 
 INSERT INTO `afiliado` (`cod_afiliado`, `nombre_afiliado`, `apellido_afiliado`) VALUES
-(23456789, 'Camilo', 'Ruiz'),
-(76578439, 'Luisa', 'Ruiz');
+('1208085', 'manuel', 'medina'),
+('23456789', 'Camilo', 'Ruiz'),
+('76578439', 'Luisa', 'Ruiz');
 
 -- --------------------------------------------------------
 
@@ -63,7 +64,7 @@ CREATE TABLE `auditoria` (
 
 CREATE TABLE `credito` (
   `cod_credito` int(11) NOT NULL,
-  `cod_afiliado` int(11) DEFAULT NULL
+  `cod_afiliado` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -71,8 +72,8 @@ CREATE TABLE `credito` (
 --
 
 INSERT INTO `credito` (`cod_credito`, `cod_afiliado`) VALUES
-(1001, 23456789),
-(1003, 76578439);
+(1001, '23456789'),
+(1003, '76578439');
 
 -- --------------------------------------------------------
 
@@ -287,7 +288,7 @@ ALTER TABLE `auditoria`
 -- Filtros para la tabla `credito`
 --
 ALTER TABLE `credito`
-  ADD CONSTRAINT `credito_afiliado_fk` FOREIGN KEY (`cod_afiliado`) REFERENCES `afiliado` (`cod_afiliado`);
+  ADD CONSTRAINT `credito_afiliado` FOREIGN KEY (`cod_afiliado`) REFERENCES `afiliado` (`cod_afiliado`);
 
 --
 -- Filtros para la tabla `cruce_informacion`
