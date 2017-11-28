@@ -14,12 +14,13 @@ class ControladorLogin extends CI_Controller {
  }
  public function iniciarSesion()
  {
+    $usuario = $this->input->post('usuario');
    	$resultado = $this->ModeloLogin->iniciarSesion($this->input->post('usuario'),$clave = $this->input->post('clave'));
     $data['message'] = 'Datos No Validos';
     if ($resultado) 
     {
     	$this->load->view('VentanaAdministrador');  //modulo del admin
-    	echo "Usuario: ";
+    	echo "Usuario: $usuario";
     }
     else
     {
