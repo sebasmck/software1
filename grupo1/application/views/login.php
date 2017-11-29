@@ -41,7 +41,7 @@
                     <div class="controls">
                         <div class="main_input_box">
                             <span class="add-on bg_ly"><i class="icon-lock"></i></span>
-                            <input name="clave_usuario" type="password" placeholder="`" required="true" />
+                            <input name="clave_usuario" type="password" placeholder="Contrasena" required="true" />
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ class ControladorLogin extends CI_Controller {
  public function iniciarSesion()
  {
     $usuario = $this->input->post('usuario');
-   	$resultado = $this->ModeloLogin->iniciarSesion($this->input->post('usuario'),$clave = $this->input->post('clave'));
+   	$resultado = $this->ModeloLogin->iniciarSesion($this->input->post('nombre_usuario'),$clave = $this->input->post('clave_usuario'));
     $data['message'] = 'Datos No Validos';
     if ($resultado) 
     {
