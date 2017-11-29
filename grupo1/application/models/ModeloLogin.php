@@ -11,8 +11,8 @@ class ModeloLogin extends CI_Model
 
   function iniciarSesion ($usuario,$clave)
   {
-     $query =  $this->db->query("SELECT UserName,Contrasena FROM usuario
-      	  WHERE UserName= '$usuario' AND Contrasena='$clave'");
+     $query =  $this->db->query("SELECT nombre_usuario,clave_usuario FROM usuario
+      	  WHERE nombre_usuario= '$usuario' AND clave_usuario='$clave'");
      if ($query -> num_rows() > 0) 
      {
       	   return $query;
