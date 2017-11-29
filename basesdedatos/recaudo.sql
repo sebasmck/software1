@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-11-2017 a las 23:35:23
+-- Tiempo de generación: 29-11-2017 a las 05:07:37
 -- Versión del servidor: 5.7.17-log
 -- Versión de PHP: 5.6.30
 
@@ -105,6 +105,34 @@ CREATE TABLE `detalle_pago` (
   `cod_credito` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `detalle_pago`
+--
+
+INSERT INTO `detalle_pago` (`cod_detalle_pago`, `cod_encabezado`, `valor_pagado`, `fecha_recaudo`, `cod_credito`) VALUES
+(1, 19, 6000000, '2017-11-20 12:00:30', 1001),
+(2, 19, 5999999, '2017-11-20 12:00:31', 1003),
+(3, 19, 5999998, '2017-11-20 12:00:32', 1003),
+(4, 19, 5999997, '2017-11-20 12:00:33', 1003),
+(5, 19, 5999996, '2017-11-20 12:00:34', 1003),
+(6, 19, 5999995, '2017-11-20 12:00:35', 1003),
+(7, 19, 5999994, '2017-11-20 12:00:36', 1003),
+(8, 19, 5999993, '2017-11-20 12:00:37', 1003),
+(9, 19, 5999992, '2017-11-20 12:00:38', 1003),
+(10, 19, 5999991, '2017-11-20 12:00:39', 1003),
+(11, 19, 5999990, '2017-11-20 12:00:40', 1003),
+(12, 19, 5999989, '2017-11-20 12:00:41', 1003),
+(13, 19, 5999988, '2017-11-20 12:00:42', 1003),
+(14, 19, 5999987, '2017-11-20 12:00:43', 1003),
+(15, 19, 5999986, '2017-11-20 12:00:44', 1003),
+(16, 19, 5999985, '2017-11-20 12:00:45', 1003),
+(17, 19, 5999984, '2017-11-20 12:00:46', 1003),
+(18, 19, 5999983, '2017-11-20 12:00:47', 1003),
+(19, 19, 5999982, '2017-11-20 12:00:48', 1003),
+(20, 19, 5999981, '2017-11-20 12:00:49', 1003),
+(21, 19, 5999980, '2017-11-20 12:00:50', 1003),
+(22, 19, 5999979, '2017-11-20 12:00:58', 1003);
+
 -- --------------------------------------------------------
 
 --
@@ -149,6 +177,34 @@ CREATE TABLE `pago_efecty` (
   `cod_detalle_pago` int(11) NOT NULL,
   `valor_comision` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `pago_efecty`
+--
+
+INSERT INTO `pago_efecty` (`cod_oficina`, `cod_detalle_pago`, `valor_comision`) VALUES
+(4567890, 1, 700000),
+(4567890, 2, 600000),
+(4567890, 3, 600000),
+(4567890, 4, 600000),
+(4567890, 5, 600000),
+(4567890, 6, 600000),
+(4567890, 7, 600000),
+(4567890, 8, 600000),
+(4567890, 9, 600000),
+(4567890, 10, 600000),
+(4567890, 11, 600000),
+(4567890, 12, 600000),
+(4567890, 13, 600000),
+(4567890, 14, 600000),
+(4567890, 15, 600000),
+(4567890, 16, 600000),
+(4567890, 17, 600000),
+(4567890, 18, 600000),
+(4567890, 19, 600000),
+(4567890, 20, 600000),
+(4567890, 21, 600000),
+(4567890, 22, 600000);
 
 -- --------------------------------------------------------
 
@@ -268,7 +324,7 @@ ALTER TABLE `cruce_informacion`
 -- AUTO_INCREMENT de la tabla `detalle_pago`
 --
 ALTER TABLE `detalle_pago`
-  MODIFY `cod_detalle_pago` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_detalle_pago` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT de la tabla `encabezado`
 --
@@ -307,15 +363,13 @@ ALTER TABLE `detalle_pago`
 -- Filtros para la tabla `pago_banco`
 --
 ALTER TABLE `pago_banco`
-  ADD CONSTRAINT `banco_detalle_pago` FOREIGN KEY (`cod_detalle_pago`) REFERENCES `detalle_pago` (`cod_detalle_pago`),
-  ADD CONSTRAINT `pago_banco_pk` FOREIGN KEY (`cod_banco`) REFERENCES `banco` (`cod_banco`);
+  ADD CONSTRAINT `banco_detalle_pago` FOREIGN KEY (`cod_detalle_pago`) REFERENCES `detalle_pago` (`cod_detalle_pago`);
 
 --
 -- Filtros para la tabla `pago_efecty`
 --
 ALTER TABLE `pago_efecty`
-  ADD CONSTRAINT `efecty_detalle_pago` FOREIGN KEY (`cod_detalle_pago`) REFERENCES `detalle_pago` (`cod_detalle_pago`),
-  ADD CONSTRAINT `pago_efecty_oficina_pk` FOREIGN KEY (`cod_oficina`) REFERENCES `oficina` (`cod_oficina`);
+  ADD CONSTRAINT `efecty_detalle_pago` FOREIGN KEY (`cod_detalle_pago`) REFERENCES `detalle_pago` (`cod_detalle_pago`);
 
 --
 -- Filtros para la tabla `usuario`
