@@ -6,6 +6,7 @@ class ControladorLogin extends CI_Controller {
   	parent::__construct();
   	$this->load->model('ModeloLogin');
   	$this->load->helper('url');
+    $this->load->library('session');
   }
 	function index() {
 		$data['message'] = ''; //mensaje en caso de que los datos sean incorrectos
@@ -19,6 +20,8 @@ class ControladorLogin extends CI_Controller {
     $data['message'] = 'Datos No Validos';
     if ($resultado) 
     {
+      $this->session->set_userdata($usuario); //inicio de manejo de sesion
+      //para finalizar, ejecutar $this->session->sess_destroy(); al presionar en log out o donde corresponda
     	$this->load->view('VentanaAdministrador');  //modulo del admin
     	echo "Usuario: $usuario";
     }
