@@ -12,3 +12,5 @@ class FileControler extends CI_Controller {
 		$data['message'] = ''; //mensaje en caso de que los datos sean incorrectos
 		$this->load->view('subir_archivo', $data); //cambiar por la nueva vista del login
  }
+
+}
