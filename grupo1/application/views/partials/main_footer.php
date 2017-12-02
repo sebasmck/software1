@@ -1,0 +1,20 @@
+	<script src=" <?= url_base()?>js/jquery.min.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.ui.custom.js"></script> 
+	<script src=" <?= url_base()?> js/bootstrap.min.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.flot.min.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.flot.resize.min.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.peity.min.js"></script> 
+	<script src=" <?= url_base()?>js/fullcalendar.min.js"></script> 
+	<script src=" <?= url_base()?>js/matrix.js"></script> 
+	<script src=" <?= url_base()?>js/matrix.dashboard.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.gritter.min.js"></script> 
+	<script src=" <?= url_base()?>js/matrix.interface.js"></script> 
+	<script src=" <?= url_base()?>js/matrix.chat.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.validate.js"></script> 
+	<script src=" <?= url_base()?>js/matrix.form_validation.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.wizard.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.uniform.js"></script> 
+	<script src=" <?= url_base()?>js/select2.min.js"></script> 
+	<script src=" <?= url_base()?>js/matrix.popover.js"></script> 
+	<script src=" <?= url_base()?>js/jquery.dataTables.min.js"></script> 
+	<script src=" <?= url_base()?>js/matrix.tables.js"></script> 

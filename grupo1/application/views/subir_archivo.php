@@ -27,7 +27,7 @@
 			</li>
 			
 			
-			<li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+			<li class=""><a title="" href="<?= base_url();?>index.php/login/sessionDestroy"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
 		</ul>
 	</div>
 	<!--close-top-Header-menu-->
@@ -35,8 +35,8 @@
 	<!--sidebar-menu-->
 	<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
 		<ul>
-			<li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
-			<li class=""><a href="index.html"><i class="icon icon-th-list"></i> <span>Subir archivo</span></a> </li>
+			<li class=""><a href="<?= base_url();?>index.php/PageController/dashboard"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+		<li class="active"><a href="<?= base_url();?>index.php/PageController/subirArchivo"><i class="icon icon-th-list"></i> <span>Subir archivo</span></a> </li>
 		</ul>
 	</div>
 
@@ -54,31 +54,10 @@
 	</div>
 	
 
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery.js" ></script>
 
 
-	<script src=" <?php url_base(); ?> "></script> 
-	<script src=" <?php url_base(); ?> js/jquery.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.ui.custom.js"></script> 
-	<script src=" <?php url_base(); ?> js/bootstrap.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.flot.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.flot.resize.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.peity.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/fullcalendar.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/matrix.js"></script> 
-	<script src=" <?php url_base(); ?> js/matrix.dashboard.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.gritter.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/matrix.interface.js"></script> 
-	<script src=" <?php url_base(); ?> js/matrix.chat.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.validate.js"></script> 
-	<script src=" <?php url_base(); ?> js/matrix.form_validation.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.wizard.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.uniform.js"></script> 
-	<script src=" <?php url_base(); ?> js/select2.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/matrix.popover.js"></script> 
-	<script src=" <?php url_base(); ?> js/jquery.dataTables.min.js"></script> 
-	<script src=" <?php url_base(); ?> js/matrix.tables.js"></script> 
-
-	<script type="text/javascript">
+<script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
   // a different page. Ignore if the value returned is a null string:
   function goPage (newURL) {
