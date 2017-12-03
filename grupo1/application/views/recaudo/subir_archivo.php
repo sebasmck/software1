@@ -3,7 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Administrador</title>
-	<?php include('partials/head.php') ?>
+
+
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.min.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-responsive.min.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/matrix-style.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/matrix-media.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('font-awesome/css/font-awesome.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/jquery.gritter.css') ?>">
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+	
+	
 </head>
 <body>
 	<!--Header-part-->
@@ -54,8 +72,26 @@
 	</div>
 	
 
-<?php include("partials/main_footer.php"); ?>	
-
+	<script src=" <?php echo base_url()?>js/jquery.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.ui.custom.js"></script> 
+	<script src=" <?php echo base_url();?>js/bootstrap.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.flot.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.flot.resize.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.peity.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/fullcalendar.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/matrix.js"></script> 
+	<script src=" <?php echo base_url();?>js/matrix.dashboard.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.gritter.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/matrix.interface.js"></script> 
+	<script src=" <?php echo base_url();?>js/matrix.chat.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.validate.js"></script> 
+	<script src=" <?php echo base_url();?>js/matrix.form_validation.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.wizard.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.uniform.js"></script> 
+	<script src=" <?php echo base_url();?>js/select2.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/matrix.popover.js"></script> 
+	<script src=" <?php echo base_url();?>js/jquery.dataTables.min.js"></script> 
+	<script src=" <?php echo base_url();?>js/matrix.tables.js"></script> 
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
