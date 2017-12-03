@@ -54,7 +54,7 @@
 	</div>
 	
 
-<script type="text/javascript" src="<?php echo base_url();?>js/jquery.js" ></script>
+<?php include("partials/main_footer.php"); ?>	
 
 
 <script type="text/javascript">
