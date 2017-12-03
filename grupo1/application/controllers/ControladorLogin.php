@@ -10,7 +10,7 @@ class ControladorLogin extends CI_Controller {
   }
   function index() {
 		$data['message'] = ''; //mensaje en caso de que los datos sean incorrectos
-		$this->load->view('login', $data); //cambiar por la nueva vista del login
+		$this->load->view('welcome', $data); //cambiar por la nueva vista del login
  }
  public function iniciarSesion(){
   $usuario = $this->input->post('usuario');
@@ -19,16 +19,16 @@ class ControladorLogin extends CI_Controller {
   if ($resultado) {
       $this->session->set_userdata($usuario); //inicio de manejo de sesion
       //para finalizar, ejecutar $this->session->sess_destroy(); al presionar en log out o donde corresponda
-    	$this->load->view('Ventana_administrador');  //modulo del admin
+    	$this->load->view('recaudo/Ventana_administrador');  //modulo del admin
     	echo "Usuario: $usuario";
     }
     else{
-    	$this->load->view('login',$data); //vista login
+    	$this->load->view('recaudo/login_recaudo',$data); //vista login
     } 
   }
 
   public function subirArchivo (){ 
-    $this->load->view('subir_archivo');
+    $this->load->view('recaudo/subir_archivo');
   }
 
     public function sessionDestroy(){

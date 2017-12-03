@@ -3,7 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Administrador</title>
-	<?php include('partials/head.php') ?>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.min.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-responsive.min.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/matrix-style.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/matrix-media.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('font-awesome/css/font-awesome.css') ?>">
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/jquery.gritter.css') ?>">
+
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+
 </head>
 <body>
 	<!--Header-part-->
@@ -22,12 +37,9 @@
 					<li class="divider"></li>
 					<li><a href="#"><i class="icon-check"></i> My Tasks</a></li>
 					<li class="divider"></li>
-					<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+					<li><a href="<?= base_url();?>index.php/ControladorLogin/sessionDestroy"><i class="icon-key"></i> Log Out</a></li>
 				</ul>
 			</li>
-			
-			
-			<li class=""><a title="" href="<?= base_url();?>index.php/login/sessionDestroy"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
 		</ul>
 	</div>
 	<!--close-top-Header-menu-->
