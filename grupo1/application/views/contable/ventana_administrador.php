@@ -37,7 +37,7 @@
 					<li class="divider"></li>
 					<li><a href="#"><i class="icon-check"></i> My Tasks</a></li>
 					<li class="divider"></li>
-					<li><a href="<?= base_url();?>index.php/ControladorLogin/sessionDestroy"><i class="icon-key"></i> Log Out</a></li>
+					<li><a href="<?= base_url();?>index.php/ControladorLoginContable/sessionDestroy"><i class="icon-key"></i> Log Out</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -49,11 +49,6 @@
 		<ul>
 			<li class="active"><a href="<?= base_url();?>index.php/PageController/dashboard"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
 		<li class=""><a href="<?= base_url();?>index.php/PageController/subirArchivo"><i class="icon icon-th-list"></i> <span>Subir archivo</span></a> </li>
-
-		<li class=""><a href="<?= base_url();?>index.php/PageController/primer_reporte_recaudo"><i class="icon icon-th-list"></i> <span>Reportes</span></a> </li>
-
-
-
 		</ul>
 	</div>
 
