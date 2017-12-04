@@ -6,7 +6,6 @@ class PageController extends CI_Controller {
   function __construct(){
   	parent::__construct();
   	$this->load->model('ModeloLogin');
-    $this->load->model('ModeloReporteRecaudo');
   	$this->load->helper('url');
     $this->load->library('session');
   }
@@ -26,9 +25,10 @@ function index() {
   }
 
   public function login_contable(){
-    $data['message'] = ''; //mensaje en caso de que los datos sean incorrectos
-    $this->load->view('contable/login_contable', $data);
+    $this->load->view('contable/login_contable');
   }
+
+
 
   public function subirArchivo (){ 
     $this->load->view('recaudo/subir_archivo');
@@ -38,12 +38,7 @@ function index() {
     $this->load->view('recaudo/ventana_administrador');
   }
 
-  public function primer_reporte_recaudo(){
-    $this->load->view('recaudo/reportes');
-    redirect('ReporteControlador');
-  }
 
-  
 
 }
 ?>

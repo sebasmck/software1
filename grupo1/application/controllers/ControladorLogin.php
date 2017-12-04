@@ -8,12 +8,10 @@ class ControladorLogin extends CI_Controller {
   	$this->load->helper('url');
     $this->load->library('session');
   }
-
-  public function index(){
-    $this->load->view('welcome');
-  }
-
-  
+  function index() {
+		$data['message'] = ''; //mensaje en caso de que los datos sean incorrectos
+		$this->load->view('welcome', $data); //cambiar por la nueva vista del login
+ }
  public function iniciarSesion(){
   $usuario = $this->input->post('usuario');
   $resultado = $this->ModeloLogin->iniciarSesion($this->input->post('nombre_usuario'),$clave = $this->input->post('clave_usuario'));
@@ -27,6 +25,10 @@ class ControladorLogin extends CI_Controller {
     else{
     	$this->load->view('recaudo/login_recaudo',$data); //vista login
     } 
+  }
+
+  public function subirArchivo (){ 
+    $this->load->view('recaudo/subir_archivo');
   }
 
     public function sessionDestroy(){

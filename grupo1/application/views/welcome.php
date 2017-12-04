@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="quick-actions_homepage">
 				<ul class="quick-actions">
 					<li class="bg_lg span6"> <a  href="<?= base_url();?>index.php/PageController/login_recaudo"> <i class="icon-signal"></i>Departamento de recaudo</a> </li>
-					<li class="bg_lo span5"> <a href="<?= base_url();?>index.php/PageController/login_contable"> <i class="icon-th-list"></i> Departamento Contable</a> </li>
+					<li class="bg_lo span5"> <a href=""> <i class="icon-th-list"></i> Departamento Contable</a> </li>
 				</ul>
 			</div>
 			<!--End-Action boxes-->    
