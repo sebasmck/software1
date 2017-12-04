@@ -77,8 +77,13 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
+<<<<<<< HEAD
 	'password' => '',
-	'database' => 'recaudo',
+	'database' => 'recaudo2',
+=======
+	'password' => '12345678',
+	'database' => 'recaudo_g1',
+>>>>>>> 540b176147dad11fe123424f6676522629538436
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -94,3 +99,50 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+$db['postgres'] = array(
+<<<<<<< HEAD
+
+	'dsn'	=> '',
+	'hostname' => 'localhost',
+	'username' => 'postgres',
+	'password' => 'password1',
+	'database' => 'contable',
+	'dbdriver' => 'postgre',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
+=======
+ 'dsn' => '',
+ 'hostname' => 'localhost',
+ 'username' => 'postgres',
+ 'password' => '1234',
+ 'database' => 'contable_g1',
+ 'dbdriver' => 'postgre',
+ 'dbprefix' => '',
+ 'pconnect' => FALSE,
+ 'db_debug' => (ENVIRONMENT !== 'production'),
+ 'cache_on' => FALSE,
+ 'cachedir' => '',
+ 'char_set' => 'utf8',
+ 'dbcollat' => 'utf8_general_ci',
+ 'swap_pre' => '',
+ 'encrypt' => FALSE,
+ 'compress' => FALSE,
+ 'stricton' => FALSE,
+ 'failover' => array(),
+ 'save_queries' => TRUE
+);
+$db['postgres']['port'] = 5432;
+>>>>>>> 540b176147dad11fe123424f6676522629538436
