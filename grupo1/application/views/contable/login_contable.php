@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-responsive.min.css') ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/matrix-login.css') ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('font-awesome/css/font-awesome.css') ?>">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap.min.css') ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/bootstrap-responsive.min.css') ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/matrix-login.css') ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('font-awesome/css/font-awesome.css') ?>">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -14,17 +14,16 @@
 
 
 <body >
-	<form action="<?= base_url()?>index.php/ControladorLogin/iniciarSesion" method="post">
-		
-		
 
-		
-		<div id="loginbox">            
+
+  <form action="<?= base_url()?>index.php/ControladorLoginContable/iniciarSesion" method="post">
+    
+  <div id="loginbox">            
       <form id="loginform" class="form-vertical" action="index.html">
        <div class="control-group normal_text"> <h3><img src="<?php echo base_url();?>img/logo.png" alt="Inicio de sesion" /></h3></div><br>
        <center>
          <h4>Bienvenido</h3><br>
-         <h>Departamento Recaudo</h2>
+         <h>Departamento Contable</h2>
         </center>
            <div class="control-group">
             <div class="controls">
