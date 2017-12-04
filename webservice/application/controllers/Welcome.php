@@ -20,21 +20,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->model('usuario');
-		$data = $this->usuario->getUser(); 
-		// header so that it can be identified as json
-		header('Content-type: application/json'); 
-		echo json_encode($data);
+		$this->load->view('usuario');
 	}
-
-	public function getUserById($id){
-		$this->load->model('usuario');
-		$data = $this->usuario->getUserById($id); 
-		// header so that it can be identified as json
-		header('Content-type: application/json'); 
-		echo json_encode($data);
-	}
-
 // This is a test
 	
 }
